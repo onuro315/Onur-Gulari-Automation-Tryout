@@ -1,0 +1,10 @@
+<suite name="Test Suite">
+    <tests name="UI and Api Test">
+        <test name="Chrome UI Test">
+            <parameter name="browser" value="chrome"></parameter>
+            <classes>
+                <class name="test.InterfaceTest"/>
+            </classes>
+        </test>
+    </tests>
+</suite>

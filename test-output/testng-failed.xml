@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Test Suite]">
+  <test thread-count="5" name="Firefox UI Test(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="test.InterfaceTest">
+        <methods>
+          <include name="startTest"/>
+          <include name="endTest"/>
+          <include name="setup"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- test.InterfaceTest -->
+    </classes>
+  </test> <!-- Firefox UI Test(failed) -->
+</suite> <!-- Failed suite [Test Suite] -->

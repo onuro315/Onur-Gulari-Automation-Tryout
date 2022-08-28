@@ -1,0 +1,19 @@
+{
+  "id": 5,
+  "category": {
+    "id": 6,
+    "name": "dog"
+  },
+  "name": "doggie",
+  "photoUrls": [
+    "https://i0.wp.com/kriptokoin.com/wp-content/uploads/2021/05/dogecoin-1200x628-1.jpg?fit=770%2C403&ssl=1",
+    "https://www.kriptoteknikhaber.com/wp-content/uploads/2021/05/doge.jpg"
+  ],
+  "tags": [
+    {
+      "id": 7,
+      "name": "doge"
+    }
+  ],
+  "status": "available"
+}

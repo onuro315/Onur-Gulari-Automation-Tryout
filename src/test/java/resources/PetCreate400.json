@@ -1,0 +1,18 @@
+{
+  "id": 123sad,
+  "category": {
+    "id": 1,
+    "name": "cat"
+  },
+  "name": "kedicik",
+  "photoUrls": [
+    "https://animalsbook.co/uploads/kot-syberyjski-dorosly.jpg"
+  ],
+  "tags": [
+    {
+      "id": 1,
+      "name": "siberian"
+    }
+  ],
+  "status": "available"
+}
