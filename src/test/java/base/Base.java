@@ -1,13 +1,19 @@
 package base;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.*;
 
+import java.io.File;
+import java.io.IOException;
 import java.time.Duration;
+import java.util.Date;
 
 public class Base {
 
@@ -47,6 +53,17 @@ public class Base {
             webDriver.navigate().to("https://useinsider.com/");
         }
 
+    }
+
+    public void testFail(){
+        Date currentDate = new Date();
+        String currentDateForFile = currentDate.toString().replace(" ", "-").replace(":", "-");
+        File ssFile = ((TakesScreenshot)webDriver).getScreenshotAs(OutputType.FILE);
+        try {
+            FileUtils.copyFile(ssFile, new File("./Screenshots/ERROR_" + this.getClass().getName() + currentDateForFile+".jpg"));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     @AfterTest

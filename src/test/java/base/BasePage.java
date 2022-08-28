@@ -54,10 +54,6 @@ public class BasePage extends Base {
         return driver.getTitle();
     }
 
-    public String getAttributeValue(By by, String attributeName){
-        return findElement(by).getAttribute(attributeName);
-    }
-
     public void waitToLoad(){
         while (true)
         {
@@ -72,9 +68,6 @@ public class BasePage extends Base {
         ((JavascriptExecutor)driver).executeScript("arguments[0].scrollIntoView();", element);
     }
 
-    public void goBottomOfPage(){
-        ((JavascriptExecutor)driver).executeScript("window.scrollTo(0, document.body.scrollHeight)");
-    }
 
     public void hoverOn(By by){
         Actions action = new Actions(driver);

@@ -1,13 +1,16 @@
 package test;
 
 import base.Base;
+import org.testng.ITestListener;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import pages.CareersPage;
 import pages.HomePage;
 import pages.OpenPositionsPage;
 
-public class InterfaceTest extends Base {
+@Listeners(ListenerTest.class)
+public class InterfaceTest extends Base implements ITestListener {
 
     HomePage homePage;
     CareersPage careersPage;

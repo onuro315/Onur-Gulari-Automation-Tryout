@@ -121,7 +121,7 @@ public class ApiTest extends ApiBase {
             Assert.assertEquals(responseAvailableJson.getString("["+i+"].status"), STATUS_SOLD);
         }
     }
-
+/*
     @Test
     public void findPetById(){
         Response response = findPetById("1");
@@ -129,6 +129,6 @@ public class ApiTest extends ApiBase {
 
         Assert.assertEquals(response.getStatusCode(), 200);
     }
-
+*/
 
 }
