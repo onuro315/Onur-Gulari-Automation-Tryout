@@ -9,11 +9,11 @@ base -> WebDriver'ın oluşturulduğu, Element'ler üzerindeki bilgilerin alınd
 
 base package'ındaki class'lar:
 
-  Base -> Otomasyon için kullanılan WebDriver'ın ayarlarının atandığı class.
+  1. Base -> Otomasyon için kullanılan WebDriver'ın ayarlarının atandığı class.
 
-  BasePage -> otomasyonda kullanılan methodları içeren class.
+  2. BasePage -> otomasyonda kullanılan methodları içeren class.
 
-  ApiBase -> Api testinde kullanılacak isteklerin tanımlandığı class.
+  3. ApiBase -> Api testinde kullanılacak isteklerin tanımlandığı class.
 
 
 constant -> Senaryolarda kullanılmış olan text, path ve locator bilgilerini içerir.
